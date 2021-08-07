@@ -1,0 +1,10 @@
+INSERT INTO t_user (id, username, password) VALUES (1, 'wind', 'niefeng_pwd');
+INSERT INTO t_user (id, username, password) VALUES (2, 'cloud', 'bujingyin_pwd');
+INSERT INTO t_user (id, username, password) VALUES (3, 'frost', 'qinshuang_pwd');
+INSERT INTO t_user (id, username, password) VALUES (4, 'chuchu', 'general_pwd');
+INSERT INTO t_user (id, username, password) VALUES (5, 'second_dream', 'general_pwd');
+INSERT INTO t_salary (id, username, salary, overtime) VALUES (1, 'wind', 100, 100);
+INSERT INTO t_salary (id, username, salary, overtime) VALUES (2, 'cloud', 50, 50);
+INSERT INTO t_salary (id, username, salary, overtime) VALUES (3, 'frost', 70, 70);
+INSERT INTO t_salary (id, username, salary, overtime) VALUES (4, 'chuchu', 70, 70);
+INSERT INTO t_salary (id, username, salary, overtime) VALUES (5, 'second_dream', 70, 70);

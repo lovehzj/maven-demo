@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>maven-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>demo-file-config</module>
+        <module>demo-servicecomb-2-1-0-producer</module>
+        <module>demo-grammar</module>
+        <module>demo-spark</module>
+        <module>demo-nio</module>
+        <module>demo-spring-async</module>
+        <module>demo-zookeeper</module>
+        <module>demo-netty</module>
+        <module>demo-protobuf</module>
+        <module>demo-bookkeeper</module>
+        <module>demo-jetty</module>
+        <module>demo-pulsar-simulate</module>
+        <module>demo-jackson</module>
+        <module>demo-okhttp</module>
+        <module>demo-redis</module>
+        <module>demo-mongo</module>
+        <module>demo-bean-convert</module>
+        <module>demo-mariadb</module>
+        <module>demo-trouble-shoot</module>
+        <module>demo-jpcap</module>
+        <module>demo-apollo</module>
+        <module>demo-pulsar</module>
+        <module>demo-bookkeeper-simulate</module>
+        <module>demo-iot-mqtt-broker</module>
+        <module>demo-mqtt-client</module>
+        <module>demo-sentinel</module>
+        <module>demo-netty-simulate</module>
+        <module>demo-mock</module>
+        <module>demo-rsocket</module>
+        <module>demo-agent</module>
+        <module>demo-agent-test</module>
+        <module>demo-iot-device-manage</module>
+        <module>demo-aliyun</module>
+        <module>demo-iot-device-model</module>
+        <module>demo-transmit-thread-local</module>
+        <module>demo-amqp</module>
+        <module>demo-concurrent</module>
+        <module>demo-prometheus</module>
+        <module>demo-http</module>
+        <module>demo-antlr</module>
+        <module>demo-basic</module>
+        <module>demo-log4j2</module>
+        <module>demo-cassandra</module>
+        <module>demo-configservice</module>
+        <module>demo-springboot-mongo</module>
+        <module>demo-lucene</module>
+        <module>demo-etcd</module>
+        <module>demo-zookeeper-server-metric</module>
+        <module>demo-beam</module>
+        <module>demo-skywalking</module>
+        <module>demo-graphql</module>
+        <module>demo-elasticsearch</module>
+        <module>demo-kafka</module>
+        <module>demo-hadoop</module>
+        <module>demo-mysql</module>
+        <module>demo-jooq</module>
+        <module>demo-integrate</module>
+        <module>demo-jcommander</module>
+        <module>demo-iotda</module>
+        <module>demo-hc</module>
+        <module>demo-mybatis</module>
+        <module>demo-module</module>
+        <module>demo-jdbc</module>
+        <module>demo-parquet</module>
+        <module>demo-avro</module>
+        <module>component-module</module>
+        <module>component-avro</module>
+        <module>component-util</module>
+        <module>component-mysql</module>
+        <module>demo-trino</module>
+        <module>demo-azure</module>
+        <module>demo-flink</module>
+        <module>demo-springboot-cassandra</module>
+        <module>demo-springboot-redis</module>
+        <module>demo-lettuce</module>
+        <module>demo-spring-boot-mysql</module>
+        <module>demo-caffeine</module>
+        <module>demo-react-websocket</module>
+        <module>demo-springcloud-gateway</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <parent>
+        <artifactId>java-dependency</artifactId>
+        <groupId>com.github.shoothzj</groupId>
+        <version>3.0.15.RELEASE</version>
+    </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.shoothzj</groupId>
+            <artifactId>java-tool</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <!-- log -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>
