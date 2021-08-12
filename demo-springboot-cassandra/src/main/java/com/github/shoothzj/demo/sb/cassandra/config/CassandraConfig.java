@@ -16,4 +16,8 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
         return "testKeySpace";
     }
 
+    @Override
+    protected String getLocalDataCenter() {
+        return "datacenter1";
+    }
 }
