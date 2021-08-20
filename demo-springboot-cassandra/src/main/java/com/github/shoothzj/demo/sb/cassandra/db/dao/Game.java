@@ -18,7 +18,7 @@ import java.util.UUID;
 @Data
 public class Game {
 
-    @PrimaryKeyColumn(name = "game_name", type = PrimaryKeyType.CLUSTERED, ordering = Ordering.DESCENDING)
+    @PrimaryKeyColumn(name = "game_name", type = PrimaryKeyType.PARTITIONED, ordering = Ordering.DESCENDING)
     private String gameName;
 
     @Column
