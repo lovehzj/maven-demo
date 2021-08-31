@@ -89,6 +89,12 @@
         <module>demo-springboot-filter</module>
         <module>demo-promql</module>
         <module>demo-springboot-tls</module>
+        <module>demo-memory-histo</module>
+        <module>demo-thread-dump</module>
+        <module>demo-performance-print</module>
+        <module>demo-mina</module>
+        <module>trace-pulsar-client</module>
+        <module>demo-qpid</module>
     </modules>
 
     <properties>

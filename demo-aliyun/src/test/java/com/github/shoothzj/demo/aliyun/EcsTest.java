@@ -1,10 +1,6 @@
 package com.github.shoothzj.demo.aliyun;
 
-import com.aliyuncs.DefaultAcsClient;
-import com.aliyuncs.IAcsClient;
-import com.aliyuncs.ecs.model.v20140526.DescribeInstancesRequest;
 import com.aliyuncs.ecs.model.v20140526.DescribeInstancesResponse;
-import com.aliyuncs.profile.DefaultProfile;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -23,7 +19,9 @@ public class EcsTest {
 
     @Test
     public void runKubernetesCluster() throws Exception {
-        EcsService.runEcsList();
+        for (int i = 0; i < 3; i++) {
+            EcsService.runEcs("kubernetesmaster" + i);
+        }
     }
 
     @Test

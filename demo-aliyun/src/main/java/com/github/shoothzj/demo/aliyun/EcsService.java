@@ -30,7 +30,7 @@ public class EcsService {
     }
 
     @SneakyThrows
-    public static void runEcsList() {
+    public static void runEcs(String name) {
         final RunInstancesRequest runInstancesRequest = new RunInstancesRequest();
         //network
         runInstancesRequest.setSecurityGroupId("sg-j6c4i2wnjsyb2vmy8mza");
@@ -45,8 +45,8 @@ public class EcsService {
 
         //系统配置
         runInstancesRequest.setPassword(AliConfigReader.getAli().getEcsPassword());
-        runInstancesRequest.setInstanceName("kubernetes");
-        runInstancesRequest.setHostName("kubernetes");
+        runInstancesRequest.setInstanceName(name);
+        runInstancesRequest.setHostName(name);
 
         //network
         runInstancesRequest.setInternetMaxBandwidthOut(1);
